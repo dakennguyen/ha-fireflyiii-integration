@@ -9,6 +9,7 @@ from homeassistant.components.binary_sensor import (
     BinarySensorEntityDescription,
     EntityDescription,
 )
+from homeassistant.components.calendar import CalendarEntityDescription
 from homeassistant.components.sensor import (
     SensorDeviceClass,
     SensorEntityDescription,
@@ -85,7 +86,7 @@ FIREFLYIII_SENSOR_DESCRIPTIONS: Final[dict[str, SensorEntityDescription]] = {
         state_class=SensorStateClass.TOTAL,
         suggested_display_precision=2,
     ),
-    FireflyiiiObjectType.BILLS: EntityDescription(
+    FireflyiiiObjectType.BILLS: CalendarEntityDescription(
         key=FireflyiiiObjectType.BILLS,
         translation_key=FireflyiiiObjectType.BILLS,
         name="Bills",

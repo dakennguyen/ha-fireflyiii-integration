@@ -736,7 +736,7 @@ class Fireflyiii:
                 transaction = None
 
                 transactions_list = await self.transactions(
-                    ids=[paid.get("transaction_journal_id")]
+                    ids=[paid.get("transaction_group_id")]
                 )
 
                 if transactions_list:
