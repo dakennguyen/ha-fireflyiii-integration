@@ -7,7 +7,6 @@ from typing import Any, Final, List, Mapping, Optional, Union
 from homeassistant.components.binary_sensor import (
     BinarySensorDeviceClass,
     BinarySensorEntityDescription,
-    EntityDescription,
 )
 from homeassistant.components.calendar import CalendarEntityDescription
 from homeassistant.components.sensor import (
@@ -16,7 +15,7 @@ from homeassistant.components.sensor import (
     SensorStateClass,
 )
 from homeassistant.const import STATE_UNAVAILABLE
-from homeassistant.helpers.entity import EntityCategory
+from homeassistant.helpers.entity import EntityCategory, EntityDescription
 from homeassistant.helpers.update_coordinator import CoordinatorEntity
 
 from .integrations.fireflyiii_config import FireflyiiiConfig
